@@ -1,0 +1,187 @@
+* {
+    font-family: "Readex Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-nav-color: rgb(236, 18, 18);
+    --main-desc-color: rgba(236, 18, 18, 0.425);
+    --main-box-shadow: 9px 17px 48px -8px rgba(0,0,0,0.2),-18px 10px 15px -3px rgba(0,0,0,0.1);
+    --body-sellection: rgba(255, 102, 0, 0.438);
+}
+
+body {
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    direction: rtl;
+    overflow-x: hidden;
+    font-size: 20px;
+    line-height: 1.89;
+}
+
+
+a,
+h1,
+span {
+    color: #fff;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body ::selection {
+    background-color: rgba(153, 12, 12, 0.726);
+}
+
+.mazarita {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.mazarita nav {
+    box-shadow: var(--main-box-shadow);
+}
+
+#Authorize {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Authorize .mazarita-login {
+    width: 650px;
+    border-radius: 5px;
+    background-color: #16181d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#Authorize .mazarita-login .login-heading {
+    display: flex;
+    justify-content: center;
+    background-color: #0f131bb8;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.login-heading span {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+#Authorize .mazarita-login form {
+    width: 100%;
+    padding: 15px;
+}
+
+#Authorize .mazarita-login form input {
+    padding: 7px;
+}
+
+#Authorize .mazarita-login form .login-data input {
+    width: 100%;
+    /* transform: skewX(-5deg); Soon System*/
+    padding: .300rem;
+    margin: 10px 0;
+    transition: all .3s ease-in-out;
+    background-color: rgb(240, 29, 29);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: white;
+}
+
+#Authorize .mazarita-login form .login-data input::placeholder {
+    color: #fff;
+}
+
+#Authorize .mazarita-login form .login-data input:focus {
+    background-color: rgba(11, 18, 27, 0.496);
+    border: 1px solid rgba(231, 6, 6, 0.623);
+
+}
+
+.auth-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0;
+}
+
+.auth-btn:hover{
+    animation: auth-btn;
+}
+
+@keyframes auth-btn {
+    from {
+        font-weight: 800;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 3px;
+        transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        border: none;
+        outline: none;
+    }
+
+    to {
+        color: rgb(255, 255, 255);
+        background-color: rgb(236, 18, 18);
+        transform: skewX(-5deg);
+        }
+}
+
+
+#Authorize .mazarita-login form .btn {
+    font-weight: 800;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border: none;
+    outline: none;
+}
+
+#Authorize .mazarita-login form .btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 18, 18);
+}
+
+
+.mazarita nav {
+    z-index: 1000;
+}
+
+
+@media (max-width:800px) {
+    #Authorize .mazarita-login {
+        width: 350px;
+    }
+
+    .mazarita nav ul li {
+        display: none;
+    }
+
+    .login-heading {
+        text-align: center;
+    }
+}

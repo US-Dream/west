@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#16181D">
+    <meta name="description" content="السيرفر الأول في الشرق الأوسط من حيث الجوده ولأول مره نقدم طريقة لعب جديده علي مستوى خوادم فايف ام ادخل واستمتع معنا">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+            #notification {
+                position: absolute;
+                right: 15px;
+                top:  20px;
+                z-index: 1000000
+            }
+
+            #notification .Not {
+                width: auto;
+                height: 100px;
+                background-color: #16181d;
+                border-radius: 8px;
+                padding: 10px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                animation: Notf 3s ease-in-out;
+                z-index: 100000;
+            }
+
+            #notification .Not .icon i {
+                font-size: 30px;
+                color: rgba(7, 73, 166, 0.818)
+            }
+
+            #notification .Not .progress {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 5px;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                animation: Progressbar 3s ease-in-out;
+            }
+
+            @keyframes Progressbar {
+                from {
+                    width: 100%;
+                }
+                to {
+                    width: 0%;
+                }
+            }
+
+            #notification .Not .msg {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #notification .Not .msg span {
+                font-size: 19px;
+            }
+
+            #notification .Not .msg p {
+                font-size: 15px;
+                color: rgba(7, 73, 166, 0.818)
+            }
+    </style>
+    <title>مقاطـعـة الــغــرب | الإقتراحات</title>
+</head>
+<body>
+
+    <div class="mazarita">
+        <nav>
+            <div class="maz-logo">
+                <img src="img/logo.png" alt="ULG">
+                <span>مقاطـعـة الــغــرب</span>
+            </div>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="urls">
+                <li>
+        <a href="index.html">
+            <span>
+                الرئيسية                        </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="https://discord.gg/EMbNTYjGBY" target="_blank">
+            <span>
+            دخول الديسكورد الرئيسي                        </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="https://b3na.com/@milano" target="_blank">
+            <span>
+                المتجـر
+            </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="staff.html">
+            <span>الطاقـم الإداري</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="suggestion.html">
+            <span>
+                الإقتراحات                        </span>
+        </a>
+    </li>
+
+    <li class="menu">
+        <a>
+            <span>
+                قوانين السيرفر
+            </span>
+            <span><i class="bi bi-arrow-down-short"></i></span>
+
+            <div class="desc" style="color: rgb(179, 18, 18);">
+                <a href="all rules/rules.html">القانون العام</a>
+                <a href="all rules/job_Rules.html">قوانين الوظائف</a>
+                <a href="all rules/gang_Rules.html">قوانين الإجرام</a>
+                <a href="all rules/staff_Rules.html">قوانين الإدارة</a>
+                <a href="all rules/verified_Rules.html">قوانين اللاعب المعتمـد</a>
+                <a href="all rules/verified+_Rules.html">قانون المعتمد بلس</a>
+            </div>
+        </a>
+
+    </li>
+
+
+
+    <li class="menu">
+        <a >
+            <span>
+                التقديم                        </span>
+            <span><i class="bi bi-arrow-down-short"></i></span>
+
+            <div class="desc">
+                <a href="form_apply.html">تقديم الدعم الفني</a>
+                <a href="#">تقديم الديسكورد</a>
+            </div>
+        </a>
+
+    </li>
+
+    <!-- <li class="menu">
+        <a >
+            <span>
+                حسابي الشخصي
+            </span>
+            <span><i class="bi bi-arrow-down-short"></i></span>
+
+            <div class="desc" style="color: rgb(179, 18, 18);">
+                    <a href="account" style="color: rgb(173, 11, 11);">حسابي الشخصي</a>
+                    <a href="checkout" style="color: rgb(173, 11, 11);">سلة المشتريات</a>
+                    <a href="?logout" style="color: rgb(173, 11, 11);">تسجيل خروج</a>
+            </div>
+        </a>
+
+    </li> -->
+
+                </ul>
+
+        </nav>
+
+
+    </div>
+    <section></section>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+    font-family: "Readex Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    direction: rtl;
+
+}
+
+:root{
+    --main-nav-color: rgb(236, 18, 18);
+    --main-desc-color: rgba(236, 18, 18, 0.425);
+    --main-box-shadow: 9px 17px 48px -8px rgba(0,0,0,0.1),-18px 10px 15px -3px rgba(0,0,0,0.1);
+    --body-sellection: rgba(153, 12, 12, 0.726);
+}
+
+/* قائمة المتغيرات الرئسيسة الخاصة بالألوان تبع الموقع */
+
+
+.mazarita nav {
+    height: 80px;
+    padding: 5px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    background-color: #0c10298c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    box-shadow: var(--main-box-shadow);
+    /* اضف هذا السطر لتنعيم الانتقال */
+}
+
+/* body {
+    background-image: url(img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    font-size: 20px;
+    line-height: 1.89;
+} */
+
+
+
+body ::selection {
+    background-color: var(--body-sellection);
+}
+
+
+.mazarita nav ul li a,span{
+    color: white;
+}
+
+/* نظام لما تعمل سكرول لون الناف بار يتغير ، حاجة شياكة */
+
+.mazarita nav.scrolled {
+    background-color: #19162b;
+    /* اللون الذي تريده عندما تسوي scroll */
+}
+
+
+body ::selection{
+    background-color: rgba(153, 12, 12, 0.726);
+}
+
+.mazarita nav .urls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.urls li {
+    background-color: #423c3c94;
+    padding: 5px 20px;
+    transition: background .3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2.5px;
+}
+
+.urls li:hover {
+    background: rgb(236, 18, 18);
+}
+
+.maz-logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: right;
+}
+
+.maz-logo > img {
+    width: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+}
+
+.mazarita nav ul li .desc {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 44px;
+    left: 0px;
+    width: 200px;
+    /* background-color: rgba(236, 18, 18, 0.425); */
+    background-color: #2d2d2d7a;
+    padding: 10px;
+    border-radius: .810rem;
+    transition: color .3s ease-in-out;
+}
+
+
+
+.menu .desc a:hover {
+    color: rgb(184, 46, 46);
+}
+
+.menu .desc a {
+    color: rgb(247, 49, 49);
+    transition: 0.3s;
+}
+
+.burger {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    margin-left: -150px;
+}
+
+.mazarita nav ul .menu:hover .desc {
+    display: flex;
+    animation: drop .3s ease-in-out;
+    z-index: 10;
+}
+
+@keyframes drop {
+    0% {
+        left: -10px;
+        opacity: 0;
+    }
+
+    50% {
+        left: -5px;
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+/* Sidebar */
+
+.sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 450px;
+        z-index: 1000;
+        background-color: rgba(160, 7, 7, 0.171);
+        box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(10px);
+        padding-top: 10px;
+        overflow-y: scroll;
+}
+
+.sidebar ::-webkit-scrollbar-track{
+    width: 1px;
+    background-color: white;
+}
+
+.sidebar li{
+    width: 100%;
+    background-color: #3604048c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+@media (max-width: 1037px) {
+    
+    .mazarita nav ul li {
+        display: none;
+    }
+
+    .maz
+
+    /* .urls li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    } */
+
+    .burger {
+        display: block;
+        margin-right: 550px;
+    }
+
+    .maz-logo {
+        margin-right: -50px;
+    }
+}
+
+
+@media (max-width:853px) {
+    .burger {
+        margin-right: 300px;
+    }
+}
+
+@media (max-width:577px) {
+    .burger {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:442px) {
+    .burger {
+        margin-right: -10px;
+    }
+}
+
+

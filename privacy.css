@@ -1,0 +1,197 @@
+* {
+    font-family: "Readex Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #292828ea !important;
+    direction: rtl;
+    overflow-x: hidden;
+    font-size: 20px;
+    line-height: 1.89;
+
+}
+a,h1,span {
+    color: #fff;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(79, 80, 80);
+}
+
+::-webkit-scrollbar-track{
+    width: 5px;
+    background-color: rgb(202, 202, 202);
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(236, 18, 18);
+}
+
+::selection {
+    background-color: rgba(255, 102, 0, 0.438);
+}
+
+.mazarita nav {
+    box-shadow: 0px -2px 7px 0px #000;
+}
+
+#privacy {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#privacy img {
+    width: 100%;
+    height: 300px;
+}
+
+#privacy h1.privTop {
+    text-align: center;
+}
+
+
+#privacy .rules {
+    padding: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#privacy .rules .rule span{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#privacy .rules .rule p {
+    color: #fff;
+    font-size: 16px;
+}
+
+#privacy span {
+    color: rgb(255, 115, 0);
+}
+
+#privacy p {
+    color: wheat;
+}
+
+.priv-top2{
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 20%;
+}
+
+/* Responsive */
+
+@media (max-width:1037px){
+    nav ul li{
+        display: none;
+    }
+
+    /* إخافء الناف في العرض الذي يحدث فيه خراب للناف */
+}
+
+@media (max-width:868px){
+    #privacy img{
+        position: relative;
+        bottom: -79px;
+
+    }
+
+    .priv-top2 {
+        position: relative;
+        top: 20px;
+        left: 2px;
+    }
+
+    .privTop {
+        margin-top: 150px;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    #privacy .rules{
+        text-align: center;
+        padding: 90px 50px;
+        margin-top: -1px;
+    }
+
+    .priv-top2 {
+        font-size: 20px;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .maz-logo {
+        margin-right: -55px;
+    }
+
+
+}
+
+
+@media (max-width:780px){
+    .priv-top2{
+        position: relative;
+        top: 2px;
+    }
+}
+
+#privacy h2{
+    text-align: center;
+}
+
+#privacy span{
+    color: rgb(236, 18, 18);
+}
+/* نظام الأرقام تبع قوانين الوظائف */
+
+
+.list-numbers {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+
+}
+.list-numbers li a {
+    transition: 0.4s;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s ease-out;
+}
+
+.list-numbers li a:hover{
+    color: black;
+    background-color: white;
+    border: black solid 1px
+}
+
+
+.list-numbers li a:hover{
+    color: black;
+}
